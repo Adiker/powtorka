@@ -37,10 +37,22 @@ class MainActivity : AppCompatActivity() {
             var kosztText = "Koszt za 1 kilometr wynosi: %.2f".format(koszt)
             Toast.makeText(this,kosztText,Toast.LENGTH_SHORT).show()
             history.add("%.2f".format(koszt))
+            /*if(binding.radioButton.isChecked)
+            {
+
+            }*/
+            /*if(binding.radioButton2.isChecked)
+            {
+
+            }*/
+            /*if(binding.radioButton3.isChecked)
+            {
+
+            }*/
         }
         private fun history()
         {
-            Toast.makeText(this,history.toString(),Toast.LENGTH_SHORT).show()
+            // useless --> Toast.makeText(this,history.toString(),Toast.LENGTH_SHORT).show()
             binding.historiaView.text = history.toString()
         }
 
